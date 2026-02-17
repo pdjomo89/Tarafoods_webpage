@@ -1,0 +1,77 @@
+.about-us {
+  background: var(--color-white);
+}
+
+.about-inline {
+  margin-top: var(--space-2xl);
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xl);
+}
+
+.about-text p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--color-text);
+  margin-bottom: var(--space-md);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.about-text p:last-child {
+  margin-bottom: 0;
+}
+
+.about-values {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+}
+
+.about-value-card {
+  text-align: center;
+  padding: var(--space-xl);
+  border-radius: var(--radius-lg);
+  background: var(--color-bg);
+  transition: transform var(--transition-normal);
+}
+
+.about-value-card:hover {
+  transform: translateY(-4px);
+}
+
+.about-value-icon {
+  font-size: 2.2rem;
+  display: block;
+  margin-bottom: var(--space-sm);
+}
+
+.about-value-card h3 {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  margin-bottom: var(--space-xs);
+  color: var(--color-dark);
+}
+
+.about-value-card p {
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+  line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+  .about-values {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .about-values {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

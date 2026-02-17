@@ -1,0 +1,143 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--header-height);
+  background-color: var(--color-white);
+  box-shadow: var(--shadow-sm);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--color-primary);
+}
+
+.header-logo span {
+  color: var(--color-secondary);
+}
+
+.header-nav {
+  display: none;
+  gap: var(--space-lg);
+}
+
+.header-nav a {
+  font-weight: 500;
+  color: var(--color-text);
+  transition: color var(--transition-fast);
+  font-size: 0.95rem;
+}
+
+.header-nav a:hover {
+  color: var(--color-primary);
+}
+
+.lang-toggle {
+  background: none;
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 0.25rem 0.6rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+  letter-spacing: 0.5px;
+}
+
+.lang-toggle:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.header-cta {
+  display: none;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  padding: var(--space-sm);
+}
+
+.hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: var(--color-dark);
+  transition: transform var(--transition-normal), opacity var(--transition-normal);
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: var(--header-height);
+  left: 0;
+  right: 0;
+  background-color: var(--color-white);
+  box-shadow: var(--shadow-md);
+  padding: var(--space-lg);
+  flex-direction: column;
+  gap: var(--space-md);
+  z-index: 999;
+}
+
+.mobile-menu.open {
+  display: flex;
+}
+
+.mobile-menu a {
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding: var(--space-sm) 0;
+  color: var(--color-text);
+  transition: color var(--transition-fast);
+}
+
+.mobile-menu a:hover {
+  color: var(--color-primary);
+}
+
+@media (min-width: 768px) {
+  .header-nav {
+    display: flex;
+  }
+
+  .header-cta {
+    display: inline-flex;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: none !important;
+  }
+}

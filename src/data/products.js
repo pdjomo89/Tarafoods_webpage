@@ -1,0 +1,117 @@
+import purePineappleImg from '../assets/products/pure-pineapple.jpeg';
+import pineappleGingerImg from '../assets/products/pineapple-ginger.jpeg';
+import baobabImg from '../assets/products/baobab.jpeg';
+import watermelonImg from '../assets/products/watermelon.jpeg';
+import lemonImg from '../assets/products/lemon.jpeg';
+
+const products = [
+  {
+    id: 1,
+    name: 'Pure Pineapple',
+    name_fr: 'Ananas Pur',
+    tagline: 'Tropical Sunshine in a Bottle',
+    tagline_fr: 'Le Soleil Tropical en Bouteille',
+    description: 'Sweet, tangy, and refreshing. Made from 100% hand-picked pineapples for the purest tropical taste.',
+    description_fr: 'Sucré, acidulé et rafraîchissant. Fait à partir de 100% d\'ananas cueillis à la main pour le goût tropical le plus pur.',
+    image: purePineappleImg,
+    packs: [
+      { size: 6, price: 13500 },
+      { size: 12, price: 25000 },
+      { size: 24, price: 45000 },
+    ],
+    currency: 'FCFA',
+    color: '#F7DC6F',
+    emoji: '🍍',
+  },
+  {
+    id: 2,
+    name: 'Pineapple Ginger',
+    name_fr: 'Ananas Gingembre',
+    tagline: 'A Zesty Tropical Kick',
+    tagline_fr: 'Un Coup de Fouet Tropical',
+    description: 'The perfect blend of sweet pineapple and spicy ginger. A bold flavor that energizes your day.',
+    description_fr: 'Le mélange parfait d\'ananas sucré et de gingembre épicé. Une saveur audacieuse qui dynamise votre journée.',
+    image: pineappleGingerImg,
+    packs: [
+      { size: 6, price: 16200 },
+      { size: 12, price: 30000 },
+      { size: 24, price: 54000 },
+    ],
+    currency: 'FCFA',
+    color: '#F5A623',
+    emoji: '✨',
+  },
+  {
+    id: 3,
+    name: 'Pure Ginger',
+    name_fr: 'Gingembre Pur',
+    tagline: 'Fire Up Your Day',
+    tagline_fr: 'Enflammez Votre Journée',
+    description: 'Intensely spicy and invigorating. Our pure ginger juice is a natural energy booster and immunity powerhouse.',
+    description_fr: 'Intensément épicé et revigorant. Notre jus de gingembre pur est un booster d\'énergie naturel et un concentré d\'immunité.',
+    packs: [
+      { size: 6, price: 16200 },
+      { size: 12, price: 30000 },
+      { size: 24, price: 54000 },
+    ],
+    currency: 'FCFA',
+    color: '#E67E22',
+    emoji: '🥒',
+  },
+  {
+    id: 4,
+    name: 'Watermelon',
+    name_fr: 'Pastèque',
+    tagline: 'Cool & Refreshing',
+    tagline_fr: 'Frais & Rafraîchissant',
+    description: 'Light, sweet, and incredibly hydrating. The ultimate refreshment for hot tropical days.',
+    description_fr: 'Léger, sucré et incroyablement hydratant. Le rafraîchissement ultime pour les journées tropicales chaudes.',
+    image: watermelonImg,
+    packs: [
+      { size: 6, price: 10800 },
+      { size: 12, price: 20000 },
+      { size: 24, price: 36000 },
+    ],
+    currency: 'FCFA',
+    color: '#E74C3C',
+    emoji: '🍉',
+  },
+  {
+    id: 5,
+    name: 'Baobab',
+    name_fr: 'Baobab',
+    tagline: 'Africa\'s Superfruit',
+    tagline_fr: 'Le Superfruit de l\'Afrique',
+    description: 'Rich in vitamin C and antioxidants. This ancient African superfruit delivers a uniquely tangy and creamy flavor.',
+    description_fr: 'Riche en vitamine C et en antioxydants. Ce superfruit africain ancestral offre une saveur unique, acidulée et crémeuse.',
+    image: baobabImg,
+    packs: [
+      { size: 6, price: 18900 },
+      { size: 12, price: 35000 },
+      { size: 24, price: 63000 },
+    ],
+    currency: 'FCFA',
+    color: '#D4AC6E',
+    emoji: '🌳',
+  },
+  {
+    id: 6,
+    name: 'Lemon',
+    name_fr: 'Citron',
+    tagline: 'Classic Citrus Burst',
+    tagline_fr: 'Explosion d\'Agrumes Classique',
+    description: 'Bright, zesty, and revitalizing. Our fresh lemon juice is the perfect pick-me-up any time of day.',
+    description_fr: 'Vif, zesté et revitalisant. Notre jus de citron frais est le remontant parfait à tout moment de la journée.',
+    image: lemonImg,
+    packs: [
+      { size: 6, price: 10800 },
+      { size: 12, price: 20000 },
+      { size: 24, price: 36000 },
+    ],
+    currency: 'FCFA',
+    color: '#F9E547',
+    emoji: '🍋',
+  },
+];
+
+export default products;
