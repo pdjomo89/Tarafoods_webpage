@@ -1,4 +1,5 @@
 import { useLanguage } from '../context/LanguageContext';
+import logo from '../assets/logo.jpeg';
 import '../styles/Footer.css';
 
 function Footer() {
@@ -11,7 +12,7 @@ function Footer() {
         <div className="footer-grid">
           <div className="footer-brand">
             <div className="footer-logo">
-              Tara<span>foods</span>
+              <img src={logo} alt="Tara Food - la vie ô nature!" className="footer-logo-img" />
             </div>
             <p>{t('footer.brand')}</p>
           </div>

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useLanguage } from '../context/LanguageContext';
+import logo from '../assets/logo.jpeg';
 import '../styles/Header.css';
 
 function Header() {
@@ -16,7 +17,7 @@ function Header() {
     <header className="header">
       <div className="container">
         <a href="#home" className="header-logo">
-          Tara<span>foods</span>
+          <img src={logo} alt="Tara Food - la vie ô nature!" className="header-logo-img" />
         </a>
 
         <nav className="header-nav">

@@ -12,15 +12,13 @@
 }
 
 .footer-brand .footer-logo {
-  font-family: var(--font-heading);
-  font-size: 1.5rem;
-  font-weight: 800;
-  color: var(--color-primary);
   margin-bottom: var(--space-sm);
 }
 
-.footer-brand .footer-logo span {
-  color: var(--color-secondary);
+.footer-logo-img {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
 }
 
 .footer-brand p {
