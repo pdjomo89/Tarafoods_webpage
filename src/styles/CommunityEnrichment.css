@@ -1,0 +1,94 @@
+.community {
+  background: var(--color-bg);
+}
+
+.community-intro {
+  max-width: 800px;
+  margin: 0 auto var(--space-2xl);
+  text-align: center;
+}
+
+.community-intro p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--color-text);
+}
+
+.community-stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-xl);
+  margin-bottom: var(--space-2xl);
+}
+
+.community-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 140px;
+}
+
+.community-stat-number {
+  font-family: var(--font-heading);
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  line-height: 1.2;
+}
+
+.community-stat-label {
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+  margin-top: var(--space-xs);
+  text-align: center;
+}
+
+.community-initiatives {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+}
+
+.community-card {
+  text-align: center;
+  padding: var(--space-xl);
+  border-radius: var(--radius-lg);
+  background: var(--color-white);
+  transition: transform var(--transition-normal);
+}
+
+.community-card:hover {
+  transform: translateY(-4px);
+}
+
+.community-card-icon {
+  font-size: 2.2rem;
+  display: block;
+  margin-bottom: var(--space-sm);
+}
+
+.community-card h3 {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  margin-bottom: var(--space-xs);
+  color: var(--color-dark);
+}
+
+.community-card p {
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+  line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+  .community-initiatives {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .community-initiatives {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
